@@ -74,7 +74,7 @@ export default function ControllerX() {
             </div>
             <div className="text:1xl md:text-2xl lg:text-4xl flex flex-col gap-2 items-center md:items-start mb-6">
 
-              <h1 className=" text-[2rem] capitalize ">HASITHA SANDAKELUM</h1>
+              <h1 className=" sm:text-[2rem] capitalize text-[1.5rem] ">HASITHA SANDAKELUM</h1>
 
               <p className=" text-[1rem] text-gray-500 font-light capitalize">Digital creator</p>
 
