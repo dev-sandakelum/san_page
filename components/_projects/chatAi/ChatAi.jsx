@@ -14,7 +14,7 @@ export default function ChatAi() {
     const { GoogleGenerativeAI } = require("@google/generative-ai");
 
     const genAI = new GoogleGenerativeAI(
-      process.env.GOOGLEG_ENERATIVE_AI,
+      process.env.NEXT_PUBLIC_GOOGLE_API_KEY
     );
     const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" });
 
