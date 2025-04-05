@@ -15,7 +15,7 @@ export default function Layout({
         enableSystem
         disableTransitionOnChange
       >
-        <SidebarProvider>
+        <SidebarProvider className="">
           <AppSidebar />
           {children}
         </SidebarProvider>
