@@ -37,6 +37,34 @@ export default function page() {
 
 
                 </Card>
+                <Card className="bg-muted/50 aspect-video rounded-xl md:w-auto max-w-[500px] w-[350px]">
+                    <CardHeader>
+                        <CardTitle>Sticker_pack</CardTitle>
+                    </CardHeader>
+                    <div className="w-auto p-6 gap-2 flex overflow-hidden">
+                        <Image alt={''} src={'/temp_sticker/path3.png'} width={80} height={80} />
+                        <Image alt={''} src={'/temp_sticker/path3.png'} width={80} height={80} />
+                        <Image alt={''} src={'/temp_sticker/path3.png'} width={80} height={80} />
+                    </div>
+                    <Link href={'#'} className='px-8 w-auto'><Button className='w-auto' >add..</Button></Link>
+
+
+
+                </Card>
+                <Card className="bg-muted/50 aspect-video rounded-xl md:w-auto max-w-[500px] w-[350px]">
+                    <CardHeader>
+                        <CardTitle>Sticker_pack</CardTitle>
+                    </CardHeader>
+                    <div className="w-auto p-6 gap-2 flex overflow-hidden">
+                        <Image alt={''} src={'/temp_sticker/path3.png'} width={80} height={80} />
+                        <Image alt={''} src={'/temp_sticker/path3.png'} width={80} height={80} />
+                        <Image alt={''} src={'/temp_sticker/path3.png'} width={80} height={80} />
+                    </div>
+                    <Link href={'#'} className='px-8 w-auto'><Button className='w-auto' >add..</Button></Link>
+
+
+
+                </Card>
 
             </div>
         </>
