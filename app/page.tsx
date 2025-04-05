@@ -54,7 +54,7 @@ export default function ControllerX() {
   // Path_adder(['hh', 'g']);
   return (
     <>
-      <SidebarInset suppressHydrationWarning >
+      <SidebarInset suppressHydrationWarning className="h-lvh overflow-scroll">
         <header className="flex h-16 shrink-0 items-center gap-2">
           <div className="flex items-center gap-2 px-4">
             <SidebarTrigger className="-ml-1 fixed bg-background" />

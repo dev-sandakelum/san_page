@@ -7,7 +7,7 @@ import Image from 'next/image'
 export default function page() {
     return (
         <>
-            <div className="grid auto-rows-min gap-4 md:grid-cols-2 lg:grid-cols-3 mx-auto max-w-screen">
+            <div className="grid auto-rows-min gap-4 md:grid-cols-2 lg:grid-cols-3 mx-auto max-w-screen sm:scale-100 scale-90">
 
                 <Card className="bg-muted/50 aspect-video rounded-xl md:w-auto max-w-[500px] w-[350px]">
                     <CardHeader>

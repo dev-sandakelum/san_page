@@ -7,7 +7,7 @@ import { YouTubeSubscriberCounter } from "../youtube-subscriber-counter/counter"
 
 export function Youtube() {
   return (
-    <Card className="bg-muted/50 aspect-video rounded-xl flex justify-center flex-col p-6 max-w-[400px]">
+    <Card className="bg-muted/50 aspect-video rounded-xl flex justify-center flex-col p-6 max-w-[400px] sm:scale-100 scale-85">
       <CardHeader>Youtube</CardHeader>
       <div className=" -mt-4 flex gap-3 items-center ">
         <Image
@@ -34,7 +34,7 @@ export function Youtube() {
 }
 export function Instagram() {
   return (
-    <Card className="bg-muted/50 aspect-video rounded-xl flex justify-center flex-col p-6 max-w-[400px]">
+    <Card className="bg-muted/50 aspect-video rounded-xl flex justify-center flex-col p-6 max-w-[400px] sm:scale-100 scale-85">
       <CardHeader>Instagram</CardHeader>
       <div className=" -mt-4 flex gap-3 items-center ">
         <Image
@@ -59,7 +59,7 @@ export function Instagram() {
 }
 export function TikTok() {
   return (
-    <Card className="bg-muted/50 aspect-video rounded-xl flex justify-center flex-col p-6 max-w-[400px]">
+    <Card className="bg-muted/50 aspect-video rounded-xl flex justify-center flex-col p-6 max-w-[400px] sm:scale-100 scale-85">
       <CardHeader>Tiktok</CardHeader>
       <div className=" -mt-4 flex gap-3 items-center ">
         <Image
