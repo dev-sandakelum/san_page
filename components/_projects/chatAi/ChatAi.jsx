@@ -37,7 +37,7 @@ export default function ChatAi() {
   }
 
   return (
-    <div className="flex w-full items-center justify-center min-h-full">
+    <div className="flex w-full items-center justify-center h-min">
       {/* <Ai /> */}
       <div className="max-w-auto w-full h-full flex flex-col-reverse overflow-x-hidden">
         <div className="w-full h-auto flex flex-col">
