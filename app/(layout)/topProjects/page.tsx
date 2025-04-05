@@ -14,8 +14,8 @@ import React from "react";
 export default function Page() {
   return (
     <>
-      <div className="border grid auto-rows-min sm:gap-4 gap-1 place-items-center md:place-items-stretch min-w-[400px] md:grid-cols-2 lg:grid-cols-3 max-w-screen mx-auto overflow-x-hidden">
-        <Card className="bg-muted/50 aspect-video rounded-xl md:w-auto w-[90%] max-w-[400px] sm:scale-100 scale-90">
+      <div className="grid auto-rows-min sm:gap-4 gap-1 min-w-[400px] md:grid-cols-2 lg:grid-cols-3 max-w-screen mx-auto overflow-x-hidden">
+        <Card className="bg-muted/50 aspect-video rounded-xl md:w-auto w-[90%] max-w-[400px] sm:scale-100 scale-90 flex flex-col justify-center">
           <CardHeader>
             <CardTitle>Ai chat app</CardTitle>
             <CardDescription>
@@ -34,7 +34,8 @@ export default function Page() {
           </Link>
         </Card>
 
-        <div className="bg-muted/50 aspect-video rounded-xl md:w-auto w-[90%] max-w-[400px] sm:scale-100 scale-90"></div>
+        <div className="bg-muted/50 aspect-video rounded-xl md:w-auto w-[90%] max-w-[400px] sm:scale-100 scale-90">
+        h</div>
         <div className="bg-muted/50 aspect-video rounded-xl md:w-auto w-[90%] max-w-[400px] sm:scale-100 scale-90"></div>
         <div className="bg-muted/50 aspect-video rounded-xl md:w-auto w-[90%] max-w-[400px] sm:scale-100 scale-90"></div>
         <div className="bg-muted/50 aspect-video rounded-xl md:w-auto w-[90%] max-w-[400px] sm:scale-100 scale-90"></div>

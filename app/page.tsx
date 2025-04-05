@@ -1,15 +1,9 @@
 
-import { Session } from "inspector";
 import Image from "next/image";
-import Dashboard from "./dashboard/page";
-import { Path_adder } from "@/components/path/Path_loc";
 import { SidebarInset, SidebarTrigger } from "@/components/ui/sidebar";
 import { Separator } from "@radix-ui/react-separator";
-import { Card, CardDescription, CardHeader } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
-import Link from "next/link";
 import { Instagram, TikTok, Youtube } from "@/components/ui_by_me/Cards";
-import { Mail } from "lucide-react";
+
 
 let web_data = {
   'is_logged_in': false,
@@ -91,12 +85,13 @@ export default function ControllerX() {
 
 
 
-          <div className="grid auto-rows-min gap-4 md:grid-cols-2 lg:grid-cols-3 ">
+          <div className="grid auto-rows-min md:gap-4 gap-2 md:grid-cols-2 lg:grid-cols-3 ">
             <Youtube />
             <Instagram />
             <TikTok />
           </div>
 
+          
         <div className="h-10 md:h-0"></div>
 
         </div>

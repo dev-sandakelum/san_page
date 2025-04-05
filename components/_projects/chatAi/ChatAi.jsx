@@ -1,4 +1,6 @@
 "use client";
+import { Input } from "@/components/ui/input";
+import { Textarea } from "@/components/ui/textarea";
 import { useState } from "react";
 
 export default function ChatAi() {
@@ -40,20 +42,20 @@ export default function ChatAi() {
     <div className="flex w-full items-center justify-center h-min">
       {/* <Ai /> */}
       <div className="max-w-auto w-full h-full flex flex-col-reverse overflow-x-hidden">
-        <div className="w-full h-auto flex flex-col">
+        <div className="w-full h-auto flex flex-col px-4 py-2">
           <p dangerouslySetInnerHTML={{ __html: Output }}></p>
           {waiting && <div>Loading...</div>}
         </div>
         <div className=" w-full h-auto  px-2 ">
           {/* input */}
-          <div className="flex justify-center border-2 rounded-full overflow-hidden px-4">
-            <input
+          <div className="flex justify-center overflow-hidden px-2 md:px-4">
+            <Textarea
               type="text"
-              className="border w-full border-none focus:outline-none"
+              className=" w-full border-none focus:outline-none self-auto"
               placeholder="Ask anything"
               onChange={(e) => setText(e.target.value)}
             />
-            <input
+            <Input
               type="button"
               value=">"
               className="w-[40px] h-[40px] flex justify-center items-center "

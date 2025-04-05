@@ -35,7 +35,7 @@ export default function RootLayout({
           </Breadcrumb>
         </div>
       </header>
-      <div className="flex flex-1 flex-col gap-4 w-full p-4 pt-0 h-full overflow-x-hidden overflow-y-scroll">
+      <div className="flex flex-1 flex-col gap-4 w-full md:p-6 pt-0 h-full overflow-x-hidden overflow-y-scroll">
 
         {children}
 
