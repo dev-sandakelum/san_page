@@ -10,6 +10,7 @@ export default function ChatAi() {
   async function Ai({ _prompt }) {
     setText("");
     setWaiting(true);
+    setOutput("");
     const { GoogleGenerativeAI } = require("@google/generative-ai");
 
     const genAI = new GoogleGenerativeAI(
@@ -36,10 +37,10 @@ export default function ChatAi() {
   }
 
   return (
-    <div className="flex w-full p-3 border items-center justify-center min-h-full">
+    <div className="flex w-full items-center justify-center min-h-full">
       {/* <Ai /> */}
-      <div className="max-w-auto border w-full h-full flex flex-col-reverse overflow-x-hidden">
-        <div className="w-full h-full border p-2 flex flex-col">
+      <div className="max-w-auto w-full h-full flex flex-col-reverse overflow-x-hidden">
+        <div className="w-full h-auto flex flex-col">
           <p dangerouslySetInnerHTML={{ __html: Output }}></p>
           {waiting && <div>Loading...</div>}
         </div>

@@ -31,6 +31,18 @@ export default function Page() {
       <div className="bg-muted/50 aspect-video rounded-xl md:w-auto w-[90%] max-w-[400px]" ></div>
       <div className="bg-muted/50 aspect-video rounded-xl md:w-auto w-[90%] max-w-[400px]" ></div>
       <div className="bg-muted/50 aspect-video rounded-xl md:w-auto w-[90%] max-w-[400px]" ></div>
+      <div className="bg-muted/50 aspect-video rounded-xl md:w-auto w-[90%] max-w-[400px]" ></div>
+      <div className="bg-muted/50 aspect-video rounded-xl md:w-auto w-[90%] max-w-[400px]" ></div>
+      <div className="bg-muted/50 aspect-video rounded-xl md:w-auto w-[90%] max-w-[400px]" ></div>
+      <div className="bg-muted/50 aspect-video rounded-xl md:w-auto w-[90%] max-w-[400px]" ></div>
+      <div className="bg-muted/50 aspect-video rounded-xl md:w-auto w-[90%] max-w-[400px]" ></div>
+      <div className="bg-muted/50 aspect-video rounded-xl md:w-auto w-[90%] max-w-[400px]" ></div>
+      <div className="bg-muted/50 aspect-video rounded-xl md:w-auto w-[90%] max-w-[400px]" ></div>
+      <div className="bg-muted/50 aspect-video rounded-xl md:w-auto w-[90%] max-w-[400px]" ></div>
+      <div className="bg-muted/50 aspect-video rounded-xl md:w-auto w-[90%] max-w-[400px]" ></div>
+      <div className="bg-muted/50 aspect-video rounded-xl md:w-auto w-[90%] max-w-[400px]" ></div>
+      <div className="bg-muted/50 aspect-video rounded-xl md:w-auto w-[90%] max-w-[400px]" ></div>
+      <div className="bg-muted/50 aspect-video rounded-xl md:w-auto w-[90%] max-w-[400px]" ></div>
     </div>
     </>
 
