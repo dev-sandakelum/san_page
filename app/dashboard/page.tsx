@@ -13,7 +13,7 @@ import {
   SidebarProvider,
   SidebarTrigger,
 } from "@/components/ui/sidebar"
-import Chat_bot from "../(layout)/topProjects/page"
+import Chat_bot from "../(_)/(layout)/topProjects/page"
 
 export default function Dashboard(is_guest_logging: any) {
 

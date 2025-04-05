@@ -1,5 +1,5 @@
 "use client"
-import "../globals.css";
+import "../../globals.css";
 import { SidebarInset, SidebarProvider, SidebarTrigger } from "@/components/ui/sidebar";
 
 import { Separator } from "@radix-ui/react-separator";

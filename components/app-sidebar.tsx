@@ -67,7 +67,7 @@ const data = {
       items: [
         {
           title: "Whatsapp stickers",
-          url: "mini/wA_stickers",
+          url: "/mini/wA_stickers",
         }, {
           title: "minecraft textures",
           url: "#",
@@ -91,7 +91,7 @@ const data = {
           url: "#",
         },{
           title: "Contact",
-          url: "#",
+          url: "/About/Contact",
         },
 
       ],
