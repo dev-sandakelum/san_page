@@ -20,7 +20,7 @@ export default function RootLayout({
 
   return (
 
-    <SidebarInset suppressHydrationWarning className=" overflow-y-hidden h-lvh">
+    <SidebarInset suppressHydrationWarning className=" overflow-hidden h-lvh">
       <header className="flex h-16 shrink-0 items-center gap-2">
         <div className="flex items-center gap-2 px-4">
           <SidebarTrigger className="-ml-1 fixed bg-background" />
@@ -35,7 +35,7 @@ export default function RootLayout({
           </Breadcrumb>
         </div>
       </header>
-      <div className="flex flex-1 flex-col gap-4 p-4 pt-0 h-full  overflow-y-scroll">
+      <div className="flex flex-1 flex-col gap-4 w-full p-4 pt-0 h-full overflow-x-hidden overflow-y-scroll">
 
         {children}
 
