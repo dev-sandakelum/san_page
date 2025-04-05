@@ -1,7 +1,7 @@
 "use client";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 export default function ChatAi() {
   const [text, setText] = useState("");
@@ -9,7 +9,7 @@ export default function ChatAi() {
   const [waiting, setWaiting] = useState(false);
 
   let chat = [];
-  async function Ai({ _prompt }) {
+  async function Ai(text) {
     setText("");
     setWaiting(true);
     setOutput("");
@@ -54,6 +54,12 @@ export default function ChatAi() {
               className=" w-full border-none focus:outline-none self-auto"
               placeholder="Ask anything"
               onChange={(e) => setText(e.target.value)}
+              onKeyDown={(e) => {
+                if (e.key === "Enter" && !e.shiftKey) {
+                  e.preventDefault();
+                  Ai(text);
+                }
+              }}
             />
             <Input
               type="button"
@@ -65,6 +71,7 @@ export default function ChatAi() {
           {/* input-end */}
         </div>
       </div>
+      
     </div>
   );
 }
