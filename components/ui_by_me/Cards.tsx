@@ -4,6 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { Button } from "../ui/button";
 import { YouTubeSubscriberCounter } from "../youtube-subscriber-counter/counter";
+import { count } from "console";
 
 export function Youtube() {
   return (
@@ -12,7 +13,7 @@ export function Youtube() {
       <div className=" -mt-4 flex gap-3 items-center ">
         <Image
           alt=""
-          src={"/channels_profile.jpg"}
+          src={"https://yt3.googleusercontent.com/QL8r67PPwEOvv6Scm5cV9wH1-aQcUO0zEBoFSYwDGodSUuB963jFCqYEqpAr9ORR4ktdnOKYOA=s160-c-k-c0x00ffffff-no-rj"}
           width={50}
           height={50}
           className="rounded-full"
@@ -25,7 +26,10 @@ export function Youtube() {
         </div>
       </div>
       <div className="">
-        <Link href={"https://www.youtube.com/@hasitha_sandakelum"} className="w-full">
+        <Link
+          href={"https://www.youtube.com/@hasitha_sandakelum"}
+          className="w-full"
+        >
           <Button className="w-[100%]">Subscribe</Button>
         </Link>
       </div>
@@ -57,21 +61,42 @@ export function Instagram() {
     </Card>
   );
 }
-export function TikTok() {
+export async function TikTok() {
+  let count_of_followers = 0;
+  let pic = "/temp_sticker/path3.png";
+  const url = `https://tiktok-api23.p.rapidapi.com/api/user/info?uniqueId=${process.env.TIKTOK_SEC_UID}`;
+  const options = {
+    method: "GET",
+    headers: {
+      "x-rapidapi-key": "3036335a10mshd6af09905ffde9cp1226c5jsn3cee5481f5f0",
+      "x-rapidapi-host": "tiktok-api23.p.rapidapi.com",
+    },
+  };
+
+  try {
+    const response = await fetch(url, options);
+    const result: any = await response.text();
+    count_of_followers =
+      JSON.parse(result)["userInfo"]["stats"]["followerCount"];
+    pic = JSON.parse(result)["userInfo"]["user"]["avatarLarger"];
+  } catch (error) {
+    console.error(error);
+  }
+
   return (
     <Card className="bg-muted/50 aspect-video rounded-xl flex justify-center flex-col p-6 max-w-[400px] sm:scale-100 scale-85">
       <CardHeader>Tiktok</CardHeader>
       <div className=" -mt-4 flex gap-3 items-center ">
         <Image
           alt=""
-          src={"/temp_sticker/path3.png"}
+          src={pic}
           width={50}
           height={50}
           className="rounded-full"
         />
         <div className="">
           <p>Hasitha_san_</p>
-          <CardDescription>1.9K Followers</CardDescription>
+          <CardDescription>{count_of_followers} Followers</CardDescription>
         </div>
       </div>
       <div className="">
