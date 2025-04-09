@@ -1,15 +1,4 @@
 
-import { Button } from "@/components/ui/button";
-import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardFooter,
-  CardHeader,
-  CardTitle,
-} from "@/components/ui/card";
-import { Description } from "@radix-ui/react-dialog";
-import Link from "next/link";
 import React from "react";
 import { topProjectsData } from "./data";
 import { Mycard } from "@/components/mycard";

@@ -4,7 +4,19 @@ const nextConfig: NextConfig = {
   /* config options here */
 
   images: {
-    domains: ["p16-sign-sg.tiktokcdn.com", "yt3.googleusercontent.com"],
+    domains: [
+      "p16-sign-sg.tiktokcdn.com",
+      "yt3.googleusercontent.com",
+      
+    ],
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'scontent-*.cdninstagram.com',
+        port: '',
+        pathname: '/**',
+      },
+    ],
   },
 };
 

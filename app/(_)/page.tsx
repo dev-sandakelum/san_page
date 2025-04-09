@@ -64,7 +64,7 @@ export default function ControllerX() {
             <div className="flex items-center justify-center ">
               <div className="w-[320px] h-[320px]  rounded-full bg-accent-foreground ">
                 <div className="w-[304px] h-[304px]  rounded-full bg-accent "></div></div>
-              <Image alt="" src={'/Untitled-6.png'} width={500} height={500} className="rounded-full absolute w-[240px] h-[240px] " />
+              <Image alt="" src={'/san_.png'} width={500} height={500} className="rounded-full absolute w-[240px] h-[240px] " />
             </div>
             <div className="text:1xl md:text-2xl lg:text-4xl flex flex-col gap-2 items-center md:items-start mb-6">
 
