@@ -7,8 +7,13 @@ import { YouTubeSubscriberCounter } from "../youtube-subscriber-counter/counter"
 
 export function Youtube() {
   return (
-    <Card className={` border-red-400 bg-muted/50 aspect-video rounded-xl flex justify-center flex-col p-6 max-w-[400px] sm:scale-100 scale-85`}>
-      <CardHeader>Youtube</CardHeader>
+    <Card
+      className={` border-red-400 bg-muted/50 aspect-video rounded-xl flex justify-center flex-col p-6 max-w-[400px] sm:scale-100 scale-85`}
+    >
+      <CardHeader className="flex gap-2 items-center">
+        <Image alt="" src={"/social/video.png"} width={20} height={20} />{" "}
+        <p>Youtube</p>
+      </CardHeader>
       <div className=" -mt-4 flex gap-3 items-center ">
         <Image
           alt=""
@@ -31,17 +36,18 @@ export function Youtube() {
           href={"https://www.youtube.com/@hasitha_sandakelum"}
           className="w-full"
         >
-          <Button className="w-[100%] bg-red-500 hover:bg-red-700 text-white transition ">Subscribe</Button>
+          <Button className="w-[100%] bg-red-500 hover:bg-red-700 text-white transition ">
+            Subscribe
+          </Button>
         </Link>
-      </div>  
+      </div>
     </Card>
   );
 }
 export async function Instagram() {
-  let count_of_followers:any = 0;
+  let count_of_followers: any = 0;
   let pic = "/Untitled-6.png";
-  const url =
-    `https://instagram230.p.rapidapi.com/user/details?username=${process.env.INSTAGRAM_USERNAME}`;
+  const url = `https://instagram230.p.rapidapi.com/user/details?username=${process.env.INSTAGRAM_USERNAME}`;
   const options = {
     method: "GET",
     headers: {
@@ -56,12 +62,13 @@ export async function Instagram() {
     const json = JSON.parse(result);
     count_of_followers = json["data"]["user"]["edge_followed_by"]["count"];
     pic = json["data"]["user"]["profile_pic_url"];
-    
   } catch (error) {
     console.error(error);
   }
   return (
-    <Card className={`border-purple-400 bg-muted/50 aspect-video rounded-xl flex justify-center flex-col p-6 max-w-[400px] sm:scale-100 scale-85`}>
+    <Card
+      className={`border-purple-400 bg-muted/50 aspect-video rounded-xl flex justify-center flex-col p-6 max-w-[400px] sm:scale-100 scale-85`}
+    >
       <CardHeader>Instagram</CardHeader>
       <div className=" -mt-4 flex gap-3 items-center ">
         <Image
@@ -77,8 +84,13 @@ export async function Instagram() {
         </div>
       </div>
       <div className="">
-        <Link href={`https://www.instagram.com/${process.env.INSTAGRAM_USERNAME}/`} className="w-full">
-          <Button className="w-[100%] bg-purple-500 hover:bg-purple-700 text-white transition ">Follow</Button>
+        <Link
+          href={`https://www.instagram.com/${process.env.INSTAGRAM_USERNAME}/`}
+          className="w-full"
+        >
+          <Button className="w-[100%] bg-purple-500 hover:bg-purple-700 text-white transition ">
+            Follow
+          </Button>
         </Link>
       </div>
     </Card>
@@ -107,7 +119,9 @@ export async function TikTok() {
   }
 
   return (
-    <Card className={`border-blue-700 bg-muted/50 aspect-video rounded-xl flex justify-center flex-col p-6 max-w-[400px] sm:scale-100 scale-85`}>
+    <Card
+      className={`border-blue-700 bg-muted/50 aspect-video rounded-xl flex justify-center flex-col p-6 max-w-[400px] sm:scale-100 scale-85`}
+    >
       <CardHeader>Tiktok</CardHeader>
       <div className=" -mt-4 flex gap-3 items-center ">
         <Image
@@ -124,7 +138,9 @@ export async function TikTok() {
       </div>
       <div className="">
         <Link href={"https://www.tiktok.com/@hasitha_san_"} className="w-full">
-          <Button className="w-[100%] bg-blue-500 hover:bg-blue-700 text-white transition ">Follow</Button>
+          <Button className="w-[100%] bg-blue-500 hover:bg-blue-700 text-white transition ">
+            Follow
+          </Button>
         </Link>
       </div>
     </Card>
