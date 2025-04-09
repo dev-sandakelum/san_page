@@ -1,6 +1,6 @@
 export default function Info_main() {
   return (
-    <main className=" text-foreground flex items-center justify-center md:p-6 px-6 text-[10px]">
+    <main className=" text-foreground flex items-center justify-center md:p-6 sm:px-6 sm:-m-0 -m-4 text-[10px] sm:scale-100 scale-75">
       <div className="space-y-2 font-light text-[1rem]">
         <p className="font-semibold text-gray-300 text-[1.1rem]">
           Digital creator
