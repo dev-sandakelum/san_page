@@ -10,9 +10,9 @@ export function Youtube() {
     <Card
       className={` border-red-400 bg-muted/50 aspect-video rounded-xl flex justify-center flex-col p-6 max-w-[400px] sm:scale-100 scale-85`}
     >
-      <CardHeader className="flex gap-2 items-center">
-        <Image alt="" src={"/social/video.png"} width={20} height={20} />{" "}
-        <p>Youtube</p>
+      <CardHeader className="flex gap-1 items-center p-0 pl-1 border-l-3 border-red-400">
+        <Image alt="" src={"/social/video.png"} width={15} height={15} />
+        <CardDescription>Youtube</CardDescription>
       </CardHeader>
       <div className=" -mt-4 flex gap-3 items-center ">
         <Image
@@ -69,7 +69,10 @@ export async function Instagram() {
     <Card
       className={`border-purple-400 bg-muted/50 aspect-video rounded-xl flex justify-center flex-col p-6 max-w-[400px] sm:scale-100 scale-85`}
     >
-      <CardHeader>Instagram</CardHeader>
+      <CardHeader className="flex gap-1 items-center p-0 pl-1 border-l-3 border-purple-400">
+        <Image alt="" src={"/social/instagram.png"} width={15} height={15} />
+        <CardDescription>Instagram</CardDescription>
+      </CardHeader>
       <div className=" -mt-4 flex gap-3 items-center ">
         <Image
           alt=""
@@ -122,7 +125,10 @@ export async function TikTok() {
     <Card
       className={`border-blue-700 bg-muted/50 aspect-video rounded-xl flex justify-center flex-col p-6 max-w-[400px] sm:scale-100 scale-85`}
     >
-      <CardHeader>Tiktok</CardHeader>
+      <CardHeader className="flex gap-1 items-center p-0 pl-1 border-l-3 border-blue-400">
+        <Image alt="" src={"/social/tik-tok.png"} width={15} height={15} />
+        <CardDescription>Tiktok</CardDescription>
+      </CardHeader>
       <div className=" -mt-4 flex gap-3 items-center ">
         <Image
           alt=""

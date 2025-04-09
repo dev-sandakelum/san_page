@@ -2,6 +2,9 @@ import Image from "next/image";
 import { SidebarInset, SidebarTrigger } from "@/components/ui/sidebar";
 import { Separator } from "@radix-ui/react-separator";
 import { Instagram, TikTok, Youtube } from "@/components/ui_by_me/Cards";
+import Info_main from "@/components/info/Info-main";
+import { CardDescription } from "@/components/ui/card";
+import "../animation.css";
 
 let web_data = {
   is_logged_in: false,
@@ -59,32 +62,30 @@ export default function ControllerX() {
         </header>
         <div className="flex flex-1 flex-col gap-4 p-4 pt-0 items-center">
           <div className="flex items-center justify-center md:gap-[60px] gap-4 flex-col md:flex-row md:mb-[20px]">
-            <div className="flex items-center justify-center rounded-full shadow-lg shadow-red-700">
-              <div className="w-[320px] h-[320px]  rounded-full bg-gradient-to-r from-purple-400 via-red-500 to-accent-foreground">
-                <div className="w-[304px] h-[304px]  rounded-full bg-accent "></div>
+            <div className="flex items-center justify-center rounded-full shadowPulse">
+              <div className="w-[320px] h-[320px]  rounded-full bg-transparent overflow-hidden">
+                <div className="w-[304px] h-[304px] rounded-full bg-accent absolute z-3 "></div>
+                <div className="w-[320px] h-[320px] rounded-full overflow-hidden relative animate-spin">
+                  <div className="w-[800px] h-[800px] bg-gradient-to-b from-purple-600 via-blue-400 to-red-500 absolute z-2 "></div>
+                </div>
               </div>
               <Image
                 alt=""
                 src={"/san_.png"}
                 width={500}
                 height={500}
-                className="rounded-full absolute w-[240px] h-[240px] "
+                className="rounded-full absolute w-[240px] h-[240px] z-4"
               />
             </div>
-            <div className="text:1xl md:text-2xl lg:text-4xl flex flex-col gap-2 items-center md:items-start mb-6">
-              <h1 className=" sm:text-[2rem] capitalize text-[1.5rem] ">
+            <div className="bg-[#ffffff0c] text:1xl md:text-2xl lg:text-4xl flex flex-col items-center md:items-start mb-6 border-2 p-2 rounded-2xl md:min-w-[400px] lg:min-w-[500px]">
+              <h1 className=" sm:text-[2rem] capitalize text-[1.5rem] md:pl-4 pt-4">
                 HASITHA SANDAKELUM
               </h1>
 
-              <p className=" text-[1rem] text-gray-500 font-light capitalize">
-                Digital creator
-              </p>
 
-              <div className="flex gap-2 mt-2">
-                <p className=" text-[1rem] font-light underline">
-                  dev.sandakelum@gmail.com
-                </p>
-              </div>
+              <CardDescription><Info_main/></CardDescription>
+
+              
             </div>
           </div>
 
