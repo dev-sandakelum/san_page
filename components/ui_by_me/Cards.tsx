@@ -53,11 +53,10 @@ export async function Instagram() {
   try {
     const response = await fetch(url, options);
     const result = await response.text();
-    count_of_followers = JSON.parse(result)["data"]["user"]["edge_followed_by"]["count"];
-    console.log(JSON.parse(result));
-    if (JSON.parse(result)["data"]["user"]["profile_pic_url"] !== undefined) {
-      pic = JSON.parse(result)["data"]["user"]["profile_pic_url"];
-    }
+    const json = JSON.parse(result);
+    count_of_followers = json["data"]["user"]["edge_followed_by"]["count"];
+    pic = json["data"]["user"]["profile_pic_url"];
+    
   } catch (error) {
     console.error(error);
   }
@@ -78,7 +77,7 @@ export async function Instagram() {
         </div>
       </div>
       <div className="">
-        <Link href={"#"} className="w-full">
+        <Link href={`https://www.instagram.com/${process.env.INSTAGRAM_USERNAME}/`} className="w-full">
           <Button className="w-[100%] bg-purple-500 hover:bg-purple-700 text-white transition ">Follow</Button>
         </Link>
       </div>

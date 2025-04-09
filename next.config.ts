@@ -7,6 +7,7 @@ const nextConfig: NextConfig = {
     domains: [
       "p16-sign-sg.tiktokcdn.com",
       "yt3.googleusercontent.com",
+      "scontent.cdninstagram.com"
       
     ],
     remotePatterns: [

@@ -62,7 +62,7 @@ export default function ControllerX() {
         <div className="flex flex-1 flex-col gap-4 p-4 pt-0 items-center">
           <div className="flex items-center justify-center md:gap-[60px] gap-4 flex-col md:flex-row md:mb-[20px]">
             <div className="flex items-center justify-center ">
-              <div className="w-[320px] h-[320px]  rounded-full bg-accent-foreground ">
+              <div className="w-[320px] h-[320px]  rounded-full bg-gradient-to-r from-purple-400 via-blue-600 via-red-500 to-accent-foreground" >
                 <div className="w-[304px] h-[304px]  rounded-full bg-accent "></div></div>
               <Image alt="" src={'/san_.png'} width={500} height={500} className="rounded-full absolute w-[240px] h-[240px] " />
             </div>
